@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>D4rkSec | Page</title>
+    <link rel="icon" type="image" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay: 1700ms;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay: 1800ms;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay: 1900ms;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay: 1900ms;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay: 1800ms;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay: 1700ms;"></div>
+    </div>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay: 1000ms;">About</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay: 1000ms;">Work</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay: 1000ms;">Contact</a>
+    <a id="projects" onclick="showprojects()" class="animated fadeIn" style="animation-delay: 1000ms;">Projects</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay: 2000ms;">
+        <h1>D4rkSec</h1>
+        <h2>Developer / Ethical Hacker / Human?</h2>
+        <div id="menu">
+            <a onclick="showabout()">About me</a>
+            <a onclick="showwork()">Work</a>
+            <a onclick="showcontact()">Contact me</a>
+            <a onclick="showprojects()">Projects</a>
+        </div>
+        <table>
+            <tr>
+                <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"
+                        href="https://github.com/d4rk-sec"><i class="fab fa-github"></i></a></td>
+                <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social"
+                        href="https://discord.gg/SFna5efXYa"><i class="fab fa-discord"></i></a></td>
+                <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social"
+                        href="https://instagram.com/d4rkseceh"><i class="fab fa-instagram"></i></a></td>
+                <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social"
+                        href="https://es.linkedin.com/in/d4rksec"><i class="fab fa-linkedin"></i></a></td>
+            </tr>
+        </table>
+    </div>
+    <div id="projects_container" class="container">
+        <div onclick="closeprojects()"><i class="fas fa-angle-right"></i></div>
+        <h1>Projects.</h1>
+        <section>
+            <h2>My Projects</h2>
+            <p>
+               Future Projects...
+            </p>
+            <ul>
+                <div class="project_card">
+                    <div class="project_info">
+                        <h3>titulo de ejemplo</h3>
+                        <p>texto de ejemplo ⚡</p>
+                        <button class="btn_one"><a
+                                href="https://github.com/example"
+                                style="color: inherit; text-decoration: none"> Ver Proyecto </a></button>
+                    </div>
+                </div>
+            </ul>
+        </section>
+    </div>
+    <div id="work_container" class="container">
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <h1>trabajo.</h1>
+        <section>
+            <h2></h2>
+            <p>
+                Texto hablando de mi.
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;Web Designing</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Research tasks</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Custom Hacking (Only Legal Works)</div>
+            </div>
+            <button class="btn_one"><a href="./assets/Resume.pdf" target="_blank"
+                    style="color: inherit; text-decoration: none">Ver resume</a></button>
+        </section>
+    </div>
+    <div id="about_container" class="container">
+        <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+        <h1>about.</h1>
+        <section>
+            <h2>About me</h2>
+            <p>
+                 In progress
+            </p>
+        </section>
+        <section>
+            <h2>skills</h2>
+            <p>
+                In progress
+            </p>
+        </section>
+    </div>
+    <div id="contact_container" class="container">
+        <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+        <h1>Contact me.</h1>
+        <section>
+            <h2>I will respond when possible.</h2>
+            <p>
+            <form action="https://formcarry.com/s/g6H3kckjH5r" method="POST" class="formcarry-form">
+                <input name="name" type="text" placeholder="name" required />
+                <input name="email" type="email" placeholder="email" required /><br>
+                <textarea name="message" placeholder="your message" required rows="5"></textarea><br>
+                <button class="btn_one">send</button>
+            </form>
+            </p>
+        </section>
+    </div>
+    <div id="footer">
+        D4rkSec Oficial <br> <a href="./l.html">.</a>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+
+    <script>
+    // Borrar
+    function disableSections() {
+        document.getElementById('work').removeAttribute('onclick');
+        document.getElementById('contact').removeAttribute('onclick');
+        document.getElementById('about').removeAttribute('onclick');
+        document.getElementById('projects').removeAttribute('onclick');
+
+        // Borrar
+    }
+
+    // Borrar
+    function enableSections() {
+        document.getElementById('work').setAttribute('onclick', 'showwork()');
+        document.getElementById('contact').setAttribute('onclick', 'showcontact()');
+        // Agrega más líneas para otros apartados si es necesario
+    }
+
+    // Borrar
+    window.onload = disableSections;
+</script>
+</body>
+
+</html>

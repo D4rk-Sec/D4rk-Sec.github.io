@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brawlnarok: Pista Descifrada</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin: 20%;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>SECRET: Pista Encontrada</h1>
+    <p>Intentas averiguar su significado pero no consigues distinguir nada, ¿Que significara? </p>
+    <p>En el intrincado tapiz de enigmas que desafían la mente, la pista revela su esencia, como un destello de sabiduría tejido con la finura de la inteligencia.</p>
+
+    <button id="copyButton" onclick="copyToClipboard()">Copy</button>
+
+    <script>
+        function copyToClipboard() {
+            const textToCopy = "TGEgc2lndWllbnRlIGluZGljYWNpw7NuIHRlIGFndWFyZGEgZW4gbGEgZW50cmFkYSBkZWwgY2FuYWwgZ2VuZXJhbCBkZSBCcmF3bG5hcm9rLCBjb21vIHVuIHBlcmdhbWlubyBlc3RyYXTDqWdpY28gcXVlIGVzcGVyYSBzZXIgZGVzZW50cmHDsWFkby4=";
+            const textArea = document.createElement("textarea");
+            textArea.value = textToCopy;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
+            alert("Texto copiado al portapapeles: " + textToCopy);
+        }
+    </script>
+</body>
+</html>
