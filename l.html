@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Que no le sabes.</title>
+    <title>Brawlnarok: Pista Descifrada</title>
     <style>
         body {
             background-color: black;
@@ -27,84 +27,26 @@
             font-size: 16px;
             cursor: pointer;
         }
-
-        #loginButton {
-            display: none;
-        }
-
-        #loginForm {
-            display: none;
-        }
-
-        #loginSubmit {
-            background-color: #333;
-            color: white;
-            padding: 10px 15px;
-            font-size: 14px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
     </style>
 </head>
 <body>
-    <h1>Ya te dije que no será tan fácil esta vez, sigue buscando.</h1>
-    <p>Quiza esto sea de ayuda:</p>
-    <!-- No pensabas que sería tan sencillo... ¿Verdad? -->
-    <p>La solución está pero no puedes verla.</p>
+    <h1>SECRET: Pista Encontrada</h1>
+    <p>Intentas averiguar su significado pero no consigues distinguir nada, ¿Que significara? </p>
+    <p>En el intrincado tapiz de enigmas que desafían la mente, la pista revela su esencia, como un destello de sabiduría tejido con la finura de la inteligencia.</p>
+
+    <button id="copyButton" onclick="copyToClipboard()">Copy</button>
 
     <script>
-        var clickCounter = 0;
-
         function copyToClipboard() {
-            const textToCopy = "que puto troll";
+            const textToCopy = "TGEgc2lndWllbnRlIGluZGljYWNpw7NuIHRlIGFndWFyZGEgZW4gbGEgZW50cmFkYSBkZWwgY2FuYWwgZ2VuZXJhbCBkZSBCcmF3bG5hcm9rLCBjb21vIHVuIHBlcmdhbWlubyBlc3RyYXTDqWdpY28gcXVlIGVzcGVyYSBzZXIgZGVzZW50cmHDsWFkby4=";
             const textArea = document.createElement("textarea");
             textArea.value = textToCopy;
             document.body.appendChild(textArea);
             textArea.select();
             document.execCommand('copy');
             document.body.removeChild(textArea);
-            alert("Solucioname esta jajaja: " + textToCopy);
-            clickCounter++;
-            if (clickCounter === 10) {
-                document.getElementById('loginButton').style.display = 'inline-block';
-                document.getElementById('loginForm').style.display = 'block';
-            }
-        }
-
-    </script>
-
-    <button id="copyButton" onclick="copyToClipboard()">Solucion</button>
-
-    <div id="loginForm">
-        <h2>Login</h2>
-        <form onsubmit="handleLogin(event)">
-            <label for="username">Usuario:</label>
-            <input type="text" id="username" required>
-            <br>
-            <label for="password">Contraseña:</label>
-            <input type="password" id="password" required>
-            <br>
-            <button type="submit" id="loginSubmit">Iniciar Sesión</button>
-        </form>
-    </div>
-
-    <script>
-        function handleLogin(event) {
-            event.preventDefault();
-
-            var username = document.getElementById('username').value;
-            var password = document.getElementById('password').value;
-
-            if (username === "admin" && password === "soygay") {
-                alert("¡Alerta! Un gay ha entrado");
-                window.location.href = "assets/A.txt";
-            } else {
-                alert("Usuario o contraseña incorrectos. Inténtalo de nuevo.");
-            }
+            alert("Texto copiado al portapapeles: " + textToCopy);
         }
     </script>
-
-    <button id="loginButton" onclick="showLogin()">Login</button>
-
 </body>
 </html>
