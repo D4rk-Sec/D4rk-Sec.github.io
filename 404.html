@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Página no encontrada</title>
     <link type="text/css" rel="stylesheet" href="./404.css" />
 </head>
-
 <body class="permission_denied">
     <div id="tsparticles"></div>
     <div class="denied__wrapper">
@@ -15,8 +16,13 @@
         <a href="https://d4rk-sec.github.io"><button class="denied__link">Go Home</button></a>
     </div>
 
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/tsparticles@1.18.11/dist/tsparticles.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/tsparticles@1.18.11/dist/tsparticles.min.js"></script>
     <script type="text/javascript" src="./404.js"></script>
-
+    <script>
+        // Redirigir a la página 404 si la URL no es reconocida
+        if (window.location.pathname !== '/404.html') {
+            window.location.href = '/404.html';
+        }
+    </script>
+</body>
 </html>
